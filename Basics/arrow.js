@@ -21,4 +21,4 @@ const todos = [{
 const result = todos.filter((todo) => todo.isdone === true )
 
 console.log(result)
-
+		

@@ -23,3 +23,5 @@ let result = objfunction(course);
 
 console.log(result.case1);
 console.log(result.case2);
+
+
