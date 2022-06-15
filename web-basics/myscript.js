@@ -14,3 +14,7 @@ var targeting = document.querySelectorAll('p');
 //arrow function 
 
 targeting.forEach((p) => p.innerText = 'arrow')
+
+const element = document.createElement('p');
+element.textContent = 'Added via Js';
+document.querySelector('body').appendChild(element)
