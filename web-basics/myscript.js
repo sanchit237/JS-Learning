@@ -18,3 +18,8 @@ targeting.forEach((p) => p.innerText = 'arrow')
 const element = document.createElement('p');
 element.textContent = 'Added via Js';
 document.querySelector('body').appendChild(element)
+
+document.querySelector('button').addEventListener('click', (e) => {
+	console.log(e)
+	e.target.textContent = 'Text changed'
+})
