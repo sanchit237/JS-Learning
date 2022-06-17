@@ -23,3 +23,4 @@ document.querySelector('button').addEventListener('click', (e) => {
 	console.log(e)
 	e.target.textContent = 'Text changed'
 })
+

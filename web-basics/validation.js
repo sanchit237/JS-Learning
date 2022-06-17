@@ -19,3 +19,28 @@ document.querySelector('.practice').addEventListener('submit', function(event){
 	event.target.username.value = ''
 	event.target.realname.value = ''
 })
+
+document.querySelector('.userdata').addEventListener('submit', function(event){
+	event.preventDefault()
+	console.log(event.target.username.value)
+	console.log(event.target.realname.value)
+	console.log(event.target.email.value)
+	console.log(event.target.password.value)
+	console.log(event.target.ver_password.value)
+
+
+	let password = event.target.password.value
+	let ver_password = event.target.ver_password.value
+
+	if (password !== ver_password){
+		let result = document.createElement('p')
+		result.textContent = 'Passwords are not matching'
+		document.querySelector('body').appendChild(result)
+	}
+	
+	event.target.username.value = ''
+	event.target.realname.value = ''
+	event.target.email.value = ''
+	event.target.password.value = ''
+	event.target.ver_password.value = ''
+})
