@@ -11,7 +11,7 @@ function validate(e){
 	}
 }
 
-
+//Form 1
 document.querySelector('.practice').addEventListener('submit', function(event){
 	event.preventDefault()
 	console.log(event.target.username.value)
@@ -20,6 +20,8 @@ document.querySelector('.practice').addEventListener('submit', function(event){
 	event.target.realname.value = ''
 })
 
+
+//Form 2 and task
 document.querySelector('.userdata').addEventListener('submit', function(event){
 	event.preventDefault()
 	console.log(event.target.username.value)
