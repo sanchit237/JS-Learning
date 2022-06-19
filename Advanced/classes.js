@@ -22,7 +22,20 @@ class User {
 	}
 }
 
-const result = new User('hey','there','everyone');
+
+class student extends User {
+	constructor(firstname, middlename, lastname, subject){
+		super(firstname, middlename, lastname)
+		this.subject = subject
+	}
+
+	getFullname = () =>  `My full name is ${this.firstname} ${this.middlename} ${this.lastname} and my subject is ${this.subject}`;
+
+}
+
+
+// const result = new User('hey','there','everyone');
+const result = new student('hey','there','everyone','javascript');
 
 console.log(result.getFullname())
 
