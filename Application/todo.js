@@ -48,6 +48,8 @@ function addItem(){
 function removeItem(){
 	li = ul.children
 
+	console.log(li)
+
 	//using for loop
 	for (let index = 0; index < li.length; index++) {
 		while (li[index] && li[index].children[0].checked) {

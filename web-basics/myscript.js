@@ -12,6 +12,8 @@ var targeting = document.querySelectorAll('p');
 // })
 
 //arrow function 
+console.log(targeting)
+console.log(typeof targeting);
 
 targeting.forEach((p) => p.innerText = 'arrow')
 
